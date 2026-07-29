@@ -1,1 +1,1 @@
-console.log("MKS Radiator$ Stąporków");
+console.log("MKS Radiator$ Stąporków - strona działa!");

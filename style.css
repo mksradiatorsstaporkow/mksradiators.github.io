@@ -1,4 +1,26 @@
-.players {
+.photo-team {
+
+height:400px;
+
+background:#003B8F;
+
+border:3px solid #FFD700;
+
+border-radius:25px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:25px;
+
+}
+
+
+
+.gallery {
 
 display:grid;
 
@@ -10,7 +32,9 @@ gap:20px;
 
 
 
-.player {
+.gallery-item {
+
+height:200px;
 
 background:#003B8F;
 
@@ -18,41 +42,15 @@ border:3px solid #FFD700;
 
 border-radius:20px;
 
-padding:20px;
-
-text-align:center;
-
-}
-
-
-
-.player-photo {
-
-height:160px;
-
-background:#071A3D;
-
-border-radius:15px;
-
 display:flex;
 
 align-items:center;
 
 justify-content:center;
 
-font-size:50px;
-
-margin-bottom:15px;
-
-}
-
-
-
-.player h3 {
-
 color:#FFD700;
 
-font-size:25px;
+font-size:22px;
 
 }
 
@@ -60,10 +58,12 @@ font-size:25px;
 
 @media(max-width:700px){
 
-.players{
+
+.gallery {
 
 grid-template-columns:1fr;
 
 }
+
 
 }

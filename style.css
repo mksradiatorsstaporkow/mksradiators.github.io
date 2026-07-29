@@ -1,222 +1,8 @@
-* {
+.players {
 
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+display:grid;
 
-}
-
-
-body {
-
-background:#071A3D;
-color:white;
-
-}
-
-
-
-header {
-
-background:#003B8F;
-padding:20px;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-position:sticky;
-top:0;
-
-z-index:10;
-
-}
-
-
-
-.logo-area {
-
-display:flex;
-align-items:center;
-gap:15px;
-
-}
-
-
-
-.logo-area img {
-
-width:70px;
-
-}
-
-
-
-header h1 {
-
-font-size:24px;
-
-}
-
-
-
-nav a {
-
-color:#FFD700;
-text-decoration:none;
-
-margin:10px;
-
-font-weight:bold;
-
-}
-
-
-
-
-.hero {
-
-min-height:80vh;
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-justify-content:center;
-
-text-align:center;
-
-background:
-
-linear-gradient(#071A3dcc,#071A3dcc),
-
-url("druzyna.jpg");
-
-background-size:cover;
-
-padding:30px;
-
-}
-
-
-
-
-.big-logo {
-
-width:220px;
-
-animation:show 1s;
-
-}
-
-
-
-.hero h2 {
-
-font-size:45px;
-
-margin:20px;
-
-color:#FFD700;
-
-}
-
-
-
-.hero p {
-
-font-size:22px;
-
-}
-
-
-
-.button {
-
-margin-top:30px;
-
-padding:15px 35px;
-
-background:#FFD700;
-
-color:#003B8F;
-
-border-radius:30px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-}
-
-
-
-section {
-
-max-width:1000px;
-
-margin:auto;
-
-padding:70px 20px;
-
-}
-
-
-
-section h2 {
-
-text-align:center;
-
-color:#FFD700;
-
-font-size:35px;
-
-margin-bottom:30px;
-
-}
-
-
-
-section p {
-
-text-align:center;
-
-line-height:1.6;
-
-font-size:18px;
-
-}
-
-
-
-
-.photo {
-
-height:300px;
-
-background:#003B8F;
-
-border:3px solid #FFD700;
-
-border-radius:20px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-}
-
-
-
-
-.cards {
-
-display:flex;
+grid-template-columns:repeat(4,1fr);
 
 gap:20px;
 
@@ -224,32 +10,7 @@ gap:20px;
 
 
 
-.card {
-
-background:#003B8F;
-
-padding:25px;
-
-border-radius:20px;
-
-flex:1;
-
-border-bottom:5px solid #FFD700;
-
-}
-
-
-
-.card h3 {
-
-color:#FFD700;
-
-}
-
-
-
-
-.match {
+.player {
 
 background:#003B8F;
 
@@ -257,17 +18,37 @@ border:3px solid #FFD700;
 
 border-radius:20px;
 
-padding:30px;
+padding:20px;
 
 text-align:center;
-
-margin-bottom:40px;
 
 }
 
 
 
-.match h3 {
+.player-photo {
+
+height:160px;
+
+background:#071A3D;
+
+border-radius:15px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:50px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.player h3 {
 
 color:#FFD700;
 
@@ -277,81 +58,12 @@ font-size:25px;
 
 
 
-a {
-
-color:#FFD700;
-
-}
-
-
-
-footer {
-
-background:#000;
-
-padding:25px;
-
-text-align:center;
-
-}
-
-
-
-
-@keyframes show {
-
-from {
-
-opacity:0;
-
-transform:scale(.5);
-
-}
-
-
-to {
-
-opacity:1;
-
-transform:scale(1);
-
-}
-
-}
-
-
-
-
-
 @media(max-width:700px){
 
+.players{
 
-header {
-
-flex-direction:column;
-
-}
-
-
-.cards {
-
-flex-direction:column;
+grid-template-columns:1fr;
 
 }
-
-
-.hero h2 {
-
-font-size:30px;
-
-}
-
-
-nav {
-
-margin-top:15px;
-
-}
-
 
 }

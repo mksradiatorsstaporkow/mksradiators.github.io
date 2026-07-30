@@ -5,11 +5,9 @@ box-sizing:border-box;
 font-family:Arial,Helvetica,sans-serif;
 }
 
-
 html{
 scroll-behavior:smooth;
 }
-
 
 body{
 background:#071A3D;
@@ -18,16 +16,12 @@ overflow-x:hidden;
 }
 
 
-
-
 /* HEADER */
 
 header{
-
 position:fixed;
 top:0;
 width:100%;
-
 background:rgba(0,59,143,.95);
 
 display:flex;
@@ -35,56 +29,37 @@ justify-content:space-between;
 align-items:center;
 
 padding:15px 40px;
-
 z-index:1000;
-
 }
 
 
-
 .logo{
-
 display:flex;
 align-items:center;
 gap:15px;
 
 color:#FFD700;
-
 font-size:22px;
 font-weight:bold;
-
 }
-
 
 
 .logo img{
-
 width:65px;
-
 }
-
 
 
 nav a{
-
 color:white;
 text-decoration:none;
-
 margin-left:20px;
-
 font-weight:bold;
-
 }
-
 
 
 nav a:hover{
-
 color:#FFD700;
-
 }
-
-
 
 
 
@@ -92,13 +67,11 @@ color:#FFD700;
 
 /* HERO */
 
-
 .hero{
 
 min-height:100vh;
 
 background:
-
 linear-gradient(
 rgba(7,26,61,.75),
 rgba(7,26,61,.9)
@@ -106,15 +79,12 @@ rgba(7,26,61,.9)
 
 url("druzyna.jpg.HEIC");
 
-
 background-size:cover;
 background-position:center;
-
 
 display:flex;
 align-items:center;
 justify-content:center;
-
 
 text-align:center;
 
@@ -123,19 +93,14 @@ padding:120px 20px 40px;
 }
 
 
-
 .hero-logo{
-
 width:160px;
-
 }
-
 
 
 .hero h1{
 
 font-size:55px;
-
 color:#FFD700;
 
 margin:25px 0;
@@ -143,13 +108,11 @@ margin:25px 0;
 }
 
 
-
 .hero p{
 
 font-size:24px;
 
 }
-
 
 
 .btn{
@@ -180,7 +143,6 @@ text-decoration:none;
 
 /* SEKCJE */
 
-
 section{
 
 max-width:1100px;
@@ -190,7 +152,6 @@ margin:auto;
 padding:90px 20px;
 
 }
-
 
 
 section h2{
@@ -210,11 +171,10 @@ margin-bottom:40px;
 
 
 
+/* AKTUALNOSCI */
 
-/* NEWS */
 
-
-.cards{
+.news-container{
 
 display:grid;
 
@@ -226,18 +186,92 @@ gap:25px;
 
 
 
-.card{
+.news-card{
 
 background:#003B8F;
 
-padding:30px;
+border-radius:25px;
 
-border-radius:20px;
+overflow:hidden;
 
 border-bottom:5px solid #FFD700;
 
 }
 
+
+
+.news-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+
+
+.news-placeholder{
+
+height:220px;
+
+background:#071A3D;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:70px;
+
+}
+
+
+
+.news-content{
+
+padding:25px;
+
+}
+
+
+.news-content span{
+
+color:#FFD700;
+
+font-size:14px;
+
+}
+
+
+.news-content h3{
+
+margin:15px 0;
+
+}
+
+
+.news-content a{
+
+display:inline-block;
+
+margin-top:15px;
+
+background:#FFD700;
+
+color:#003B8F;
+
+padding:10px 20px;
+
+border-radius:20px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
 
 
 
@@ -268,13 +302,11 @@ text-align:center;
 }
 
 
-
 .team img{
 
 width:100px;
 
 }
-
 
 
 .team h3{
@@ -284,7 +316,6 @@ color:#FFD700;
 margin-top:15px;
 
 }
-
 
 
 .vs h2{
@@ -309,11 +340,14 @@ border:2px solid #FFD700;
 display:flex;
 
 align-items:center;
+
 justify-content:center;
 
 font-size:40px;
 
 }
+
+
 
 
 
@@ -326,7 +360,6 @@ flex-direction:column;
 gap:15px;
 
 }
-
 
 
 .results div{
@@ -359,7 +392,6 @@ overflow-x:auto;
 }
 
 
-
 table{
 
 width:100%;
@@ -368,12 +400,7 @@ border-collapse:collapse;
 
 background:#003B8F;
 
-border-radius:20px;
-
-overflow:hidden;
-
 }
-
 
 
 th{
@@ -385,7 +412,6 @@ color:#003B8F;
 padding:15px;
 
 }
-
 
 
 td{
@@ -415,7 +441,6 @@ font-weight:bold;
 
 
 
-
 /* TERMINARZ */
 
 
@@ -428,7 +453,6 @@ flex-direction:column;
 gap:15px;
 
 }
-
 
 
 .fixtures div{
@@ -446,7 +470,6 @@ text-align:center;
 }
 
 
-
 .fixtures span{
 
 color:#FFD700;
@@ -454,7 +477,6 @@ color:#FFD700;
 font-weight:bold;
 
 }
-
 
 
 
@@ -476,7 +498,6 @@ gap:25px;
 }
 
 
-
 .player{
 
 background:#003B8F;
@@ -490,7 +511,6 @@ padding:25px;
 text-align:center;
 
 }
-
 
 
 .player-photo{
@@ -514,12 +534,11 @@ margin-bottom:20px;
 }
 
 
-
 .player h3{
 
-font-size:30px;
-
 color:#FFD700;
+
+font-size:30px;
 
 }
 
@@ -529,16 +548,12 @@ color:#FFD700;
 
 
 
-/* DRUZYNA */
+/* ZDJECIE DRUZYNY */
 
 
 .team-photo img{
 
 width:100%;
-
-max-height:500px;
-
-object-fit:cover;
 
 border-radius:25px;
 
@@ -566,7 +581,6 @@ gap:20px;
 }
 
 
-
 .gallery div{
 
 height:200px;
@@ -579,9 +593,9 @@ border-radius:20px;
 
 display:flex;
 
-justify-content:center;
-
 align-items:center;
+
+justify-content:center;
 
 }
 
@@ -590,6 +604,7 @@ align-items:center;
 
 
 
+/* KONTAKT */
 
 a{
 
@@ -655,8 +670,6 @@ flex-wrap:wrap;
 
 justify-content:center;
 
-margin-top:10px;
-
 }
 
 
@@ -666,14 +679,6 @@ nav a{
 font-size:13px;
 
 margin:5px;
-
-}
-
-
-
-.hero-logo{
-
-width:110px;
 
 }
 
@@ -695,6 +700,14 @@ font-size:18px;
 
 
 
+.hero-logo{
+
+width:110px;
+
+}
+
+
+
 section{
 
 padding:60px 15px;
@@ -711,7 +724,7 @@ font-size:30px;
 
 
 
-.cards{
+.news-container{
 
 grid-template-columns:1fr;
 
@@ -743,13 +756,6 @@ grid-template-columns:1fr;
 
 }
 
-
-
-.player-photo{
-
-height:250px;
-
-}
 
 
 }

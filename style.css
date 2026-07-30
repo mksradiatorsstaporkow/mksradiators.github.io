@@ -1618,3 +1618,51 @@ width:150px;
 }
 
 }
+/* ===== POPRAWA OSTATNICH WYNIKÓW TELEFON ===== */
+
+
+.results{
+
+grid-template-columns:repeat(3,1fr);
+
+gap:15px;
+
+}
+
+
+
+.results div{
+
+padding:18px 10px;
+
+font-size:14px;
+
+min-height:60px;
+
+}
+
+
+
+
+@media(max-width:700px){
+
+.results{
+
+grid-template-columns:1fr;
+
+gap:15px;
+
+}
+
+
+.results div{
+
+width:100%;
+
+padding:20px;
+
+font-size:16px;
+
+}
+
+}

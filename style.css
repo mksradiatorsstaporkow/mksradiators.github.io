@@ -843,3 +843,23 @@ border-radius:20px;
 font-weight:bold;
 
 }
+
+#countdown{
+
+margin-top:20px;
+
+background:#071A3D;
+
+border:2px solid #FFD700;
+
+border-radius:15px;
+
+padding:15px;
+
+color:#FFD700;
+
+font-weight:bold;
+
+font-size:18px;
+
+}

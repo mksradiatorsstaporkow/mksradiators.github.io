@@ -2165,3 +2165,123 @@ grid-template-columns:1fr;
 }
 
 }
+/* ===== CLUB BAR - POPRAWKA PREMIUM ===== */
+
+
+.club-bar{
+
+    max-width:1100px;
+
+    margin:-40px auto 50px;
+
+    position:relative;
+
+    z-index:10;
+
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+
+    padding:35px;
+
+
+    background:linear-gradient(
+        145deg,
+        #003B8F,
+        #071A3D
+    ) !important;
+
+
+    border-radius:30px !important;
+
+    border:2px solid rgba(255,215,0,.5) !important;
+
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.6) !important;
+
+}
+
+
+
+
+.club-bar div{
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,215,0,.25);
+
+    transition:.3s;
+
+}
+
+
+
+.club-bar div:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#FFD700;
+
+}
+
+
+
+.club-bar strong{
+
+    display:block;
+
+    font-size:35px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.club-bar p{
+
+    color:#FFD700;
+
+    font-weight:800;
+
+    margin:0;
+
+}
+
+
+
+
+@media(max-width:800px){
+
+.club-bar{
+
+    grid-template-columns:repeat(2,1fr);
+
+    margin:20px;
+
+}
+
+}
+
+
+
+@media(max-width:450px){
+
+.club-bar{
+
+    grid-template-columns:1fr;
+
+}
+
+}

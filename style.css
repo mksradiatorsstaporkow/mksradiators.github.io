@@ -2382,3 +2382,20 @@ grid-template-columns:1fr;
 }
 
 }
+/* ===== POZYCJE W KADRZE ===== */
+
+.position-title{
+
+text-align:center;
+
+margin:50px 0 25px;
+
+font-size:32px;
+
+color:#FFD700;
+
+text-transform:uppercase;
+
+letter-spacing:2px;
+
+}

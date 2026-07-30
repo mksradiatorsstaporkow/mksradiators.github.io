@@ -1,88 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
+
 
 body {
-    background: #071A3D;
-    color: white;
-    overflow-x: hidden;
+    background:#071A3D;
+    color:white;
+    overflow-x:hidden;
 }
 
 
-/* HEADER */
 
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 59, 143, 0.95);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    z-index: 1000;
+
+    position:fixed;
+    top:0;
+    width:100%;
+
+    background:rgba(0,59,143,0.95);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 40px;
+
+    z-index:1000;
+
 }
+
 
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: #FFD700;
-    font-size: 22px;
-    font-weight: bold;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    color:#FFD700;
+
+    font-size:22px;
+    font-weight:bold;
+
 }
+
 
 
 .logo img {
-    width: 65px;
-    height: auto;
+
+    width:65px;
+
 }
+
 
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
+
+    color:white;
+    text-decoration:none;
+
+    margin-left:20px;
+
+    font-weight:bold;
+
 }
+
 
 
 nav a:hover {
-    color: #FFD700;
+
+    color:#FFD700;
+
 }
+
 
 
 
 
 /* HERO */
 
+
 .hero {
 
-    min-height: 100vh;
+    min-height:100vh;
 
     background:
+
     linear-gradient(
     rgba(7,26,61,0.75),
     rgba(7,26,61,0.9)
     ),
+
     url("druzyna.jpg.HEIC");
 
-    background-size: cover;
-    background-position: center;
+
+    background-size:cover;
+    background-position:center;
+
 
     display:flex;
-    justify-content:center;
+
     align-items:center;
+    justify-content:center;
+
 
     text-align:center;
+
 
     padding:120px 20px 40px;
 
@@ -90,16 +121,9 @@ nav a:hover {
 
 
 
-.hero-content {
-    max-width:900px;
-}
-
-
-
 .hero-logo {
 
     width:160px;
-    height:auto;
 
 }
 
@@ -107,8 +131,10 @@ nav a:hover {
 
 .hero h1 {
 
-    font-size:55px;
     color:#FFD700;
+
+    font-size:55px;
+
     margin:25px 0;
 
 }
@@ -123,20 +149,22 @@ nav a:hover {
 
 
 
-
 .btn {
 
     display:inline-block;
+
     margin-top:30px;
 
-    background:#FFD700;
-    color:#003B8F;
-
     padding:15px 35px;
+
+    background:#FFD700;
+
+    color:#003B8F;
 
     border-radius:30px;
 
     text-decoration:none;
+
     font-weight:bold;
 
 }
@@ -148,9 +176,11 @@ nav a:hover {
 
 /* SEKCJE */
 
+
 section {
 
     max-width:1100px;
+
     margin:auto;
 
     padding:90px 20px;
@@ -174,7 +204,9 @@ section h2 {
 
 
 
-/* AKTUALNOSCI */
+
+/* NEWS */
+
 
 .cards {
 
@@ -207,7 +239,15 @@ section h2 {
 
 /* MECZ */
 
-.match-box {
+
+.next-match {
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
 
     background:#003B8F;
 
@@ -223,23 +263,89 @@ section h2 {
 
 
 
+.team img {
+
+    width:100px;
+
+}
+
+
+
+.team h3 {
+
+    margin-top:15px;
+
+    color:#FFD700;
+
+}
+
+
+
+.vs h2 {
+
+    font-size:45px;
+
+}
+
+
+
+.enemy-logo {
+
+    width:100px;
+
+    height:100px;
+
+    border-radius:50%;
+
+    background:#071A3D;
+
+    border:2px solid #FFD700;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+}
+
+
+
+
+.results {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.results div {
+
+    background:#003B8F;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    border-left:5px solid #FFD700;
+
+    text-align:center;
+
+}
+
+
 
 
 
 
 /* DRUZYNA */
-
-
-.team-photo {
-
-    width:100%;
-
-    overflow:hidden;
-
-    border-radius:25px;
-
-}
-
 
 
 .team-photo img {
@@ -250,7 +356,7 @@ section h2 {
 
     object-fit:cover;
 
-    display:block;
+    border-radius:25px;
 
     border:4px solid #FFD700;
 
@@ -260,9 +366,8 @@ section h2 {
 
 
 
-
-
 /* GALERIA */
+
 
 .gallery {
 
@@ -273,6 +378,7 @@ section h2 {
     gap:20px;
 
 }
+
 
 
 .gallery div {
@@ -287,9 +393,9 @@ section h2 {
 
     display:flex;
 
-    justify-content:center;
-
     align-items:center;
+
+    justify-content:center;
 
 }
 
@@ -297,8 +403,17 @@ section h2 {
 
 
 
+/* KONTAKT */
 
-/* STOPKA */
+
+a {
+
+    color:#FFD700;
+
+}
+
+
+
 
 footer {
 
@@ -317,16 +432,18 @@ footer {
 
 /* TELEFON */
 
+
 @media(max-width:800px){
 
 
 header {
 
-    padding:10px 15px;
-
     flex-direction:column;
 
+    padding:10px 15px;
+
 }
+
 
 
 .logo img {
@@ -336,6 +453,7 @@ header {
 }
 
 
+
 .logo span {
 
     font-size:16px;
@@ -343,9 +461,8 @@ header {
 }
 
 
-nav {
 
-    margin-top:10px;
+nav {
 
     display:flex;
 
@@ -353,25 +470,20 @@ nav {
 
     justify-content:center;
 
+    margin-top:10px;
+
 }
 
 
 
 nav a {
 
-    font-size:13px;
-
     margin:5px;
 
-}
-
-
-
-.hero {
-
-    min-height:90vh;
+    font-size:13px;
 
 }
+
 
 
 
@@ -399,6 +511,7 @@ nav a {
 
 
 
+
 section {
 
     padding:60px 15px;
@@ -418,6 +531,16 @@ section h2 {
 .cards {
 
     grid-template-columns:1fr;
+
+}
+
+
+
+.next-match {
+
+    flex-direction:column;
+
+    gap:30px;
 
 }
 

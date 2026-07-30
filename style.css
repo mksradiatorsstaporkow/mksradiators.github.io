@@ -1,83 +1,63 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-
 body {
-background: #071A3D;
-color: white;
+    background: #071A3D;
+    color: white;
+    overflow-x: hidden;
 }
 
 
 /* HEADER */
 
 header {
-
-position: fixed;
-top: 0;
-width: 100%;
-
-background: rgba(0, 59, 143, 0.95);
-
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-padding: 15px 40px;
-
-z-index: 1000;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 59, 143, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
 }
 
 
 .logo {
-
-display: flex;
-align-items: center;
-gap: 15px;
-
-font-size: 22px;
-font-weight: bold;
-
-color: #FFD700;
-
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #FFD700;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 
 .logo img {
-
-width: 65px;
-
+    width: 65px;
+    height: auto;
 }
 
 
-
 nav a {
-
-color: white;
-text-decoration: none;
-
-margin-left: 20px;
-
-font-weight: bold;
-
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
 }
 
 
 nav a:hover {
-
-color: #FFD700;
-
+    color: #FFD700;
 }
-
 
 
 
@@ -86,42 +66,40 @@ color: #FFD700;
 
 .hero {
 
-height: 100vh;
+    min-height: 100vh;
 
-background:
+    background:
+    linear-gradient(
+    rgba(7,26,61,0.75),
+    rgba(7,26,61,0.9)
+    ),
+    url("druzyna.jpg.HEIC");
 
-linear-gradient(
-rgba(7,26,61,0.75),
-rgba(7,26,61,0.85)
-),
+    background-size: cover;
+    background-position: center;
 
-url("druzyna.jpg.HEIC");
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
+    text-align:center;
 
-background-size: cover;
-background-position: center;
-
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-text-align: center;
+    padding:120px 20px 40px;
 
 }
 
 
 
 .hero-content {
-
-animation: show 1.5s;
-
+    max-width:900px;
 }
+
 
 
 .hero-logo {
 
-width: 220px;
+    width:160px;
+    height:auto;
 
 }
 
@@ -129,11 +107,9 @@ width: 220px;
 
 .hero h1 {
 
-font-size: 55px;
-
-color: #FFD700;
-
-margin: 20px 0;
+    font-size:55px;
+    color:#FFD700;
+    margin:25px 0;
 
 }
 
@@ -141,7 +117,7 @@ margin: 20px 0;
 
 .hero p {
 
-font-size: 25px;
+    font-size:24px;
 
 }
 
@@ -150,21 +126,18 @@ font-size: 25px;
 
 .btn {
 
-display: inline-block;
+    display:inline-block;
+    margin-top:30px;
 
-margin-top: 30px;
+    background:#FFD700;
+    color:#003B8F;
 
-background: #FFD700;
+    padding:15px 35px;
 
-color: #003B8F;
+    border-radius:30px;
 
-padding: 15px 35px;
-
-border-radius: 30px;
-
-font-weight: bold;
-
-text-decoration: none;
+    text-decoration:none;
+    font-weight:bold;
 
 }
 
@@ -175,14 +148,12 @@ text-decoration: none;
 
 /* SEKCJE */
 
-
 section {
 
-max-width: 1100px;
+    max-width:1100px;
+    margin:auto;
 
-margin: auto;
-
-padding: 100px 20px;
+    padding:90px 20px;
 
 }
 
@@ -190,45 +161,45 @@ padding: 100px 20px;
 
 section h2 {
 
-text-align: center;
+    text-align:center;
 
-font-size: 40px;
+    color:#FFD700;
 
-color: #FFD700;
+    font-size:38px;
 
-margin-bottom: 40px;
+    margin-bottom:40px;
 
 }
 
 
 
 
-
-/* KARTY */
-
+/* AKTUALNOSCI */
 
 .cards {
 
-display: grid;
+    display:grid;
 
-grid-template-columns: repeat(3,1fr);
+    grid-template-columns:repeat(3,1fr);
 
-gap: 25px;
+    gap:25px;
 
 }
+
 
 
 .card {
 
-background:#003B8F;
+    background:#003B8F;
 
-padding:30px;
+    padding:30px;
 
-border-radius:20px;
+    border-radius:20px;
 
-border-bottom:5px solid #FFD700;
+    border-bottom:5px solid #FFD700;
 
 }
+
 
 
 
@@ -236,20 +207,21 @@ border-bottom:5px solid #FFD700;
 
 /* MECZ */
 
-
 .match-box {
 
-background:#003B8F;
+    background:#003B8F;
 
-border:3px solid #FFD700;
+    border:3px solid #FFD700;
 
-padding:40px;
+    border-radius:25px;
 
-border-radius:25px;
+    padding:40px;
 
-text-align:center;
+    text-align:center;
 
 }
+
+
 
 
 
@@ -258,15 +230,32 @@ text-align:center;
 /* DRUZYNA */
 
 
-.team-photo img {
+.team-photo {
 
-width:100%;
+    width:100%;
 
-border-radius:25px;
+    overflow:hidden;
 
-border:4px solid #FFD700;
+    border-radius:25px;
 
 }
+
+
+
+.team-photo img {
+
+    width:100%;
+
+    max-height:500px;
+
+    object-fit:cover;
+
+    display:block;
+
+    border:4px solid #FFD700;
+
+}
+
 
 
 
@@ -275,85 +264,52 @@ border:4px solid #FFD700;
 
 /* GALERIA */
 
-
 .gallery {
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(4,1fr);
 
-gap:20px;
+    gap:20px;
 
 }
-
 
 
 .gallery div {
 
-height:200px;
+    height:200px;
 
-background:#003B8F;
+    background:#003B8F;
 
-border-radius:20px;
+    border:3px solid #FFD700;
 
-border:3px solid #FFD700;
+    border-radius:20px;
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    justify-content:center;
 
-justify-content:center;
-
-}
-
-
-
-
-
-/* LINKI */
-
-
-a {
-
-color:#FFD700;
+    align-items:center;
 
 }
 
 
 
 
+
+
+/* STOPKA */
 
 footer {
 
-background:black;
+    background:black;
 
-padding:30px;
+    padding:30px;
 
-text-align:center;
-
-}
-
-
-
-
-
-@keyframes show {
-
-from {
-
-opacity:0;
-transform:translateY(40px);
+    text-align:center;
 
 }
 
-to {
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
 
 
 
@@ -361,48 +317,123 @@ transform:translateY(0);
 
 /* TELEFON */
 
-
 @media(max-width:800px){
 
 
 header {
 
-flex-direction:column;
+    padding:10px 15px;
+
+    flex-direction:column;
+
+}
+
+
+.logo img {
+
+    width:45px;
+
+}
+
+
+.logo span {
+
+    font-size:16px;
 
 }
 
 
 nav {
 
-margin-top:15px;
+    margin-top:10px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
 
 }
+
 
 
 nav a {
 
-margin:8px;
+    font-size:13px;
+
+    margin:5px;
 
 }
+
+
+
+.hero {
+
+    min-height:90vh;
+
+}
+
+
+
+.hero-logo {
+
+    width:110px;
+
+}
+
 
 
 .hero h1 {
 
-font-size:35px;
+    font-size:32px;
 
 }
+
+
+
+.hero p {
+
+    font-size:18px;
+
+}
+
+
+
+section {
+
+    padding:60px 15px;
+
+}
+
+
+
+section h2 {
+
+    font-size:30px;
+
+}
+
 
 
 .cards {
 
-grid-template-columns:1fr;
+    grid-template-columns:1fr;
 
 }
 
 
+
 .gallery {
 
-grid-template-columns:1fr;
+    grid-template-columns:1fr;
+
+}
+
+
+
+.team-photo img {
+
+    max-height:300px;
 
 }
 

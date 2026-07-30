@@ -2399,3 +2399,118 @@ text-transform:uppercase;
 letter-spacing:2px;
 
 }
+/* ===== NAVBAR PREMIUM ===== */
+
+
+header{
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+
+background:
+
+rgba(7,26,61,.85);
+
+
+backdrop-filter:blur(12px);
+
+
+border-bottom:
+
+1px solid rgba(255,215,0,.25);
+
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.35);
+
+}
+
+
+
+
+nav a{
+
+position:relative;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:700;
+
+padding:10px 15px;
+
+transition:.3s;
+
+}
+
+
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+left:50%;
+
+bottom:0;
+
+width:0;
+
+height:3px;
+
+background:#FFD700;
+
+transition:.3s;
+
+transform:translateX(-50%);
+
+}
+
+
+
+nav a:hover{
+
+color:#FFD700;
+
+}
+
+
+
+nav a:hover::after{
+
+width:80%;
+
+}
+
+
+
+
+
+.logo span{
+
+font-weight:900;
+
+font-size:20px;
+
+color:#FFD700;
+
+}
+
+
+
+
+
+.logo img{
+
+filter:
+
+drop-shadow(0 0 10px rgba(255,215,0,.6));
+
+}

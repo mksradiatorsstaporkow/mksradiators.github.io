@@ -1083,3 +1083,170 @@ grid-template-columns:1fr;
 }
 
 }
+/* ===== ZDJĘCIE DRUŻYNY NA DOLE ===== */
+
+.team-photo{
+    width:100%;
+    max-width:1100px;
+    margin:50px auto;
+    padding:0;
+    border-radius:30px;
+    overflow:hidden;
+    border:2px solid rgba(255,215,0,.5);
+}
+
+
+.team-photo img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+}
+/* ===== PROFESJONALNE KARTY MECZÓW I INFORMACJI ===== */
+
+
+/* najbliższy mecz */
+
+.next-match{
+    background:linear-gradient(
+        145deg,
+        #003B8F,
+        #071A3D
+    );
+
+    padding:45px;
+
+    border-radius:30px;
+
+    border:2px solid rgba(255,215,0,.4);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.5);
+
+    margin-bottom:50px;
+}
+
+
+/* drużyny w meczu */
+
+.team{
+
+    background:rgba(255,255,255,.05);
+
+    padding:25px;
+
+    border-radius:25px;
+
+    min-width:200px;
+
+    border:1px solid rgba(255,215,0,.2);
+
+}
+
+
+
+/* VS */
+
+.vs{
+
+    background:#071A3D;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    border:1px solid #FFD700;
+
+    text-align:center;
+
+}
+
+
+
+/* ostatnie wyniki */
+
+.results{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+.results div{
+
+    background:linear-gradient(
+        145deg,
+        #003B8F,
+        #071A3D
+    );
+
+    padding:30px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,215,0,.35);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.4);
+
+    transition:.3s;
+
+}
+
+
+.results div:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#FFD700;
+
+}
+
+
+
+
+
+/* tabela */
+
+.table-box{
+
+    background:linear-gradient(
+        145deg,
+        #003B8F,
+        #071A3D
+    );
+
+    padding:30px;
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,215,0,.4);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.4);
+
+}
+
+
+
+/* terminarz */
+
+.fixtures div{
+
+    background:linear-gradient(
+        145deg,
+        #003B8F,
+        #071A3D
+    );
+
+    border:1px solid rgba(255,215,0,.3);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.35);
+
+}

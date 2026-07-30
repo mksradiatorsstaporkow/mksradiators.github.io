@@ -2514,3 +2514,90 @@ filter:
 drop-shadow(0 0 10px rgba(255,215,0,.6));
 
 }
+/* ===== ANIMACJE SEKCJI ===== */
+
+
+section{
+
+animation:sectionShow .8s ease both;
+
+}
+
+
+
+@keyframes sectionShow{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+
+
+.card,
+.player,
+.results div,
+.fixtures div,
+.table-box,
+.club-bar{
+
+transition:
+
+transform .3s ease,
+
+box-shadow .3s ease,
+
+border-color .3s ease;
+
+}
+
+
+
+
+.card:hover,
+.player:hover,
+.results div:hover,
+.fixtures div:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+
+
+/* płynne przewijanie */
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+
+
+
+/* lepsze odstępy sekcji */
+
+section{
+
+scroll-margin-top:100px;
+
+}

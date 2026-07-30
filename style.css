@@ -2,7 +2,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+font-family:'Arial',sans-serif;
 }
 
 html{
@@ -10,26 +10,31 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#071A3D;
+background:#050d22;
 color:white;
 overflow-x:hidden;
 }
 
 
-/* HEADER */
+/* ===== HEADER ===== */
 
 header{
 position:fixed;
 top:0;
+left:0;
 width:100%;
-background:rgba(0,59,143,.95);
+z-index:1000;
 
 display:flex;
 justify-content:space-between;
 align-items:center;
 
-padding:15px 40px;
-z-index:1000;
+padding:15px 50px;
+
+background:rgba(5,13,34,0.85);
+backdrop-filter:blur(10px);
+
+border-bottom:1px solid rgba(255,215,0,.3);
 }
 
 
@@ -38,49 +43,50 @@ display:flex;
 align-items:center;
 gap:15px;
 
-color:#FFD700;
 font-size:22px;
 font-weight:bold;
+color:#FFD700;
 }
 
 
 .logo img{
-width:65px;
+width:60px;
+height:60px;
+object-fit:contain;
 }
 
 
 nav a{
+
 color:white;
 text-decoration:none;
-margin-left:20px;
+
+margin-left:25px;
+
 font-weight:bold;
+
+transition:.3s;
+
 }
 
 
 nav a:hover{
+
 color:#FFD700;
+
 }
 
 
 
 
 
-/* HERO */
+
+/* ===== HERO ===== */
+
 
 .hero{
 
 min-height:100vh;
-
-background:
-linear-gradient(
-rgba(7,26,61,.75),
-rgba(7,26,61,.9)
-),
-
-url("druzyna.jpg.HEIC");
-
-background-size:cover;
-background-position:center;
 
 display:flex;
 align-items:center;
@@ -88,22 +94,59 @@ justify-content:center;
 
 text-align:center;
 
-padding:120px 20px 40px;
+padding:120px 20px 50px;
+
+
+background:
+
+linear-gradient(
+rgba(5,13,34,.75),
+rgba(5,13,34,.95)
+),
+
+url("druzyna.jpg.HEIC");
+
+
+background-size:cover;
+background-position:center;
 
 }
+
 
 
 .hero-logo{
-width:160px;
+
+width:170px;
+
+filter:drop-shadow(0 0 20px #FFD700);
+
+animation:float 3s infinite;
+
 }
+
+
+
+@keyframes float{
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
 
 
 .hero h1{
 
-font-size:55px;
+font-size:60px;
+
 color:#FFD700;
 
 margin:25px 0;
+
+text-shadow:0 0 20px rgba(255,215,0,.4);
 
 }
 
@@ -115,24 +158,39 @@ font-size:24px;
 }
 
 
+
+
 .btn{
 
 display:inline-block;
 
 margin-top:30px;
 
-padding:15px 35px;
+padding:15px 40px;
+
+border-radius:40px;
+
 
 background:#FFD700;
 
 color:#003B8F;
 
-border-radius:30px;
-
 font-weight:bold;
 
 text-decoration:none;
 
+transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 25px #FFD700;
+
 }
 
 
@@ -140,29 +198,30 @@ text-decoration:none;
 
 
 
+/* ===== SEKCJE ===== */
 
-/* SEKCJE */
 
 section{
 
-max-width:1100px;
+max-width:1200px;
 
 margin:auto;
 
-padding:90px 20px;
+padding:90px 25px;
 
 }
+
 
 
 section h2{
 
 text-align:center;
 
+font-size:40px;
+
 color:#FFD700;
 
-font-size:38px;
-
-margin-bottom:40px;
+margin-bottom:45px;
 
 }
 
@@ -171,7 +230,60 @@ margin-bottom:40px;
 
 
 
-/* AKTUALNOSCI */
+/* ===== KARTY OGÓLNE ===== */
+
+
+.card,
+.news-card,
+.match-card,
+.player,
+.sponsor,
+.club-box,
+.season-box{
+
+background:
+
+linear-gradient(
+145deg,
+rgba(0,59,143,.95),
+rgba(0,30,80,.95)
+);
+
+
+border-radius:25px;
+
+border:1px solid rgba(255,215,0,.25);
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.35);
+
+transition:.35s;
+
+}
+
+
+
+.card:hover,
+.news-card:hover,
+.match-card:hover,
+.player:hover,
+.sponsor:hover,
+.club-box:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 20px 50px rgba(255,215,0,.2);
+
+}
+
+
+
+
+
+/* ===== NEWS ===== */
 
 
 .news-container{
@@ -188,42 +300,7 @@ gap:25px;
 
 .news-card{
 
-background:#003B8F;
-
-border-radius:25px;
-
 overflow:hidden;
-
-border-bottom:5px solid #FFD700;
-
-}
-
-
-
-.news-card img{
-
-width:100%;
-height:180px;
-object-fit:cover;
-display:block;
-  
-}
-
-
-
-.news-placeholder{
-
-height:220px;
-
-background:#071A3D;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:70px;
 
 }
 
@@ -240,31 +317,23 @@ padding:25px;
 
 color:#FFD700;
 
-font-size:14px;
-
 }
 
-
-.news-content h3{
-
-margin:15px 0;
-
-}
 
 
 .news-content a{
 
 display:inline-block;
 
-margin-top:15px;
+margin-top:20px;
+
+padding:10px 25px;
 
 background:#FFD700;
 
 color:#003B8F;
 
-padding:10px 20px;
-
-border-radius:20px;
+border-radius:25px;
 
 text-decoration:none;
 
@@ -274,27 +343,29 @@ font-weight:bold;
 
 
 
+.news-content a:hover{
 
+box-shadow:0 0 15px #FFD700;
 
-
-/* MECZ */
-
+}
+/* ===== MECZE ===== */
 
 .next-match{
 
 display:flex;
 
-justify-content:space-around;
+justify-content:center;
 
 align-items:center;
 
-background:#003B8F;
+gap:50px;
 
-border:3px solid #FFD700;
+flex-wrap:wrap;
 
-border-radius:25px;
+}
 
-padding:40px;
+
+.team{
 
 text-align:center;
 
@@ -303,46 +374,20 @@ text-align:center;
 
 .team img{
 
-width:100px;
+width:120px;
 
-}
+height:120px;
 
-
-.team h3{
-
-color:#FFD700;
-
-margin-top:15px;
+object-fit:contain;
 
 }
 
 
 .vs h2{
 
-font-size:45px;
+font-size:50px;
 
-}
-
-
-
-.enemy-logo{
-
-width:100px;
-height:100px;
-
-border-radius:50%;
-
-background:#071A3D;
-
-border:2px solid #FFD700;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:40px;
+color:#FFD700;
 
 }
 
@@ -350,38 +395,7 @@ font-size:40px;
 
 
 
-.results{
-
-display:flex;
-
-flex-direction:column;
-
-gap:15px;
-
-}
-
-
-.results div{
-
-background:#003B8F;
-
-padding:20px;
-
-border-radius:15px;
-
-border-left:5px solid #FFD700;
-
-text-align:center;
-
-}
-
-
-
-
-
-
-
-/* TABELA */
+/* ===== TABELA ===== */
 
 
 .table-box{
@@ -389,6 +403,7 @@ text-align:center;
 overflow-x:auto;
 
 }
+
 
 
 table{
@@ -399,7 +414,12 @@ border-collapse:collapse;
 
 background:#003B8F;
 
+border-radius:20px;
+
+overflow:hidden;
+
 }
+
 
 
 th{
@@ -408,9 +428,10 @@ background:#FFD700;
 
 color:#003B8F;
 
-padding:15px;
+padding:18px;
 
 }
+
 
 
 td{
@@ -419,7 +440,7 @@ padding:15px;
 
 text-align:center;
 
-border-bottom:1px solid rgba(255,255,255,.2);
+border-bottom:1px solid rgba(255,255,255,.1);
 
 }
 
@@ -427,7 +448,7 @@ border-bottom:1px solid rgba(255,255,255,.2);
 
 .our-team{
 
-background:#071A3D;
+background:rgba(255,215,0,.2);
 
 color:#FFD700;
 
@@ -439,39 +460,45 @@ font-weight:bold;
 
 
 
-
-/* TERMINARZ */
+/* ===== TERMINARZ ===== */
 
 
 .fixtures{
 
-display:flex;
+display:grid;
 
-flex-direction:column;
+grid-template-columns:repeat(3,1fr);
 
-gap:15px;
+gap:25px;
 
 }
 
 
-.fixtures div{
+.match-card{
 
-background:#003B8F;
-
-padding:20px;
-
-border-radius:15px;
-
-border-left:5px solid #FFD700;
+padding:30px;
 
 text-align:center;
 
 }
 
 
-.fixtures span{
 
-color:#FFD700;
+
+
+.match-status{
+
+display:inline-block;
+
+margin-top:20px;
+
+background:#FFD700;
+
+color:#003B8F;
+
+padding:10px 25px;
+
+border-radius:30px;
 
 font-weight:bold;
 
@@ -481,9 +508,7 @@ font-weight:bold;
 
 
 
-
-
-/* KADRA */
+/* ===== KADRA ===== */
 
 
 .players{
@@ -497,13 +522,8 @@ gap:25px;
 }
 
 
+
 .player{
-
-background:#003B8F;
-
-border-radius:25px;
-
-border-bottom:5px solid #FFD700;
 
 padding:25px;
 
@@ -512,13 +532,10 @@ text-align:center;
 }
 
 
+
 .player-photo{
 
-height:220px;
-
-background:#071A3D;
-
-border-radius:20px;
+height:180px;
 
 display:flex;
 
@@ -526,11 +543,16 @@ align-items:center;
 
 justify-content:center;
 
-font-size:60px;
+font-size:70px;
+
+background:#071A3D;
+
+border-radius:20px;
 
 margin-bottom:20px;
 
 }
+
 
 
 .player h3{
@@ -545,324 +567,8 @@ font-size:30px;
 
 
 
+/* ===== SPONSORZY ===== */
 
-
-/* ZDJECIE DRUZYNY */
-
-
-.team-photo img{
-
-width:100%;
-
-border-radius:25px;
-
-border:4px solid #FFD700;
-
-}
-
-
-
-
-
-
-
-/* GALERIA */
-
-
-.gallery{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:20px;
-
-}
-
-
-.gallery div{
-
-height:200px;
-
-background:#003B8F;
-
-border:3px solid #FFD700;
-
-border-radius:20px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-}
-
-
-
-
-
-
-/* KONTAKT */
-
-a{
-
-color:#FFD700;
-
-}
-
-
-
-footer{
-
-background:black;
-
-padding:30px;
-
-text-align:center;
-
-}
-
-
-
-
-
-
-
-/* TELEFON */
-
-
-@media(max-width:800px){
-
-
-header{
-
-flex-direction:column;
-
-padding:10px 15px;
-
-}
-
-
-
-.logo img{
-
-width:45px;
-
-}
-
-
-
-.logo span{
-
-font-size:16px;
-
-}
-
-
-
-nav{
-
-display:flex;
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-}
-
-
-
-nav a{
-
-font-size:13px;
-
-margin:5px;
-
-}
-
-
-
-.hero h1{
-
-font-size:32px;
-
-}
-
-
-
-.hero p{
-
-font-size:18px;
-
-}
-
-
-
-.hero-logo{
-
-width:110px;
-
-}
-
-
-
-section{
-
-padding:60px 15px;
-
-}
-
-
-
-section h2{
-
-font-size:30px;
-
-}
-
-
-
-.news-container{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-.next-match{
-
-flex-direction:column;
-
-gap:30px;
-
-}
-
-
-
-.players{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-.gallery{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-}
-
-.player h2{
-
-color:#FFD700;
-
-font-size:20px;
-
-margin:15px 0;
-
-}
-
-
-.player p{
-
-line-height:1.8;
-
-}
-
-.match-card{
-
-background:#003B8F;
-
-padding:30px;
-
-border-radius:25px;
-
-border-bottom:5px solid #FFD700;
-
-text-align:center;
-
-margin-bottom:20px;
-
-}
-
-
-
-.match-card h3{
-
-color:#FFD700;
-
-margin:15px 0;
-
-}
-
-
-
-.match-date{
-
-font-size:18px;
-
-font-weight:bold;
-
-}
-
-
-
-.match-vs{
-
-font-size:35px;
-
-font-weight:bold;
-
-margin:15px;
-
-}
-
-
-
-.match-status{
-
-display:inline-block;
-
-margin-top:15px;
-
-background:#FFD700;
-
-color:#003B8F;
-
-padding:8px 20px;
-
-border-radius:20px;
-
-font-weight:bold;
-
-}
-
-#countdown{
-
-margin-top:20px;
-
-background:#071A3D;
-
-border:2px solid #FFD700;
-
-border-radius:15px;
-
-padding:15px;
-
-color:#FFD700;
-
-font-weight:bold;
-
-font-size:18px;
-
-}
 
 .sponsors{
 
@@ -870,9 +576,9 @@ display:grid;
 
 grid-template-columns:repeat(2,1fr);
 
-gap:25px;
+gap:30px;
 
-max-width:700px;
+max-width:800px;
 
 margin:auto;
 
@@ -882,15 +588,9 @@ margin:auto;
 
 .sponsor{
 
-background:#003B8F;
-
-border-radius:25px;
-
 padding:30px;
 
 text-align:center;
-
-border-bottom:5px solid #FFD700;
 
 }
 
@@ -900,43 +600,40 @@ border-bottom:5px solid #FFD700;
 
 height:150px;
 
-background:#071A3D;
-
-border-radius:20px;
-
 display:flex;
 
 align-items:center;
 
 justify-content:center;
 
-font-size:40px;
+background:#071A3D;
 
-color:#FFD700;
+border-radius:20px;
 
 margin-bottom:20px;
 
-}
-
-
-
-.sponsor h3{
-
-color:#FFD700;
+overflow:hidden;
 
 }
 
 
 
-@media(max-width:800px){
+.sponsor-logo img{
 
-.sponsors{
+max-width:150px;
 
-grid-template-columns:1fr;
+max-height:100px;
+
+object-fit:contain;
 
 }
 
-}
+
+
+
+
+/* ===== O KLUBIE ===== */
+
 
 .club-info{
 
@@ -952,13 +649,7 @@ gap:25px;
 
 .club-box{
 
-background:#003B8F;
-
 padding:30px;
-
-border-radius:25px;
-
-border-bottom:5px solid #FFD700;
 
 text-align:center;
 
@@ -966,25 +657,171 @@ text-align:center;
 
 
 
-.club-box h3{
+
+
+/* ===== SEZONY ===== */
+
+
+.season-menu{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.season-btn{
+
+background:#FFD700;
+
+color:#003B8F;
+
+padding:15px 30px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+
+
+.season-btn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 20px #FFD700;
+
+}
+
+
+
+.season-box{
+
+padding:35px;
+
+margin-top:30px;
+
+}
+
+
+
+.season-stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+}
+
+
+
+.season-stats div{
+
+background:#071A3D;
+
+padding:20px;
+
+border-radius:20px;
+
+text-align:center;
+
+}
+
+
+
+.season-stats strong{
 
 color:#FFD700;
 
-margin-bottom:20px;
+font-size:22px;
 
 }
 
 
 
-.club-box p{
 
-line-height:1.7;
+
+/* ===== STOPKA ===== */
+
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+background:#030817;
+
+color:#FFD700;
 
 }
 
 
 
-@media(max-width:800px){
+
+
+/* ===== TELEFON ===== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+padding:15px 20px;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+
+nav{
+
+text-align:center;
+
+}
+
+
+
+nav a{
+
+margin:8px;
+
+display:inline-block;
+
+}
+
+
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+
+
+.news-container,
+
+.fixtures,
+
+.players,
 
 .club-info{
 
@@ -992,145 +829,61 @@ grid-template-columns:1fr;
 
 }
 
-}
 
-/* ===== ARCHIWUM SEZONÓW ===== */
 
-.season-menu{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-bottom:40px;
-}
+.sponsors{
 
-.season-btn{
-background:#FFD700;
-color:#003B8F;
-padding:15px 25px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-.season-btn:hover{
-background:white;
-transform:translateY(-3px);
-}
-
-.season-box{
-background:#003B8F;
-padding:35px;
-border-radius:25px;
-border-bottom:5px solid #FFD700;
-margin-bottom:35px;
-}
-
-.season-box h3{
-color:#FFD700;
-margin-bottom:15px;
-font-size:30px;
-}
-
-.season-box p{
-margin-bottom:25px;
-font-size:18px;
-}
-
-.season-stats{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-}
-
-.season-stats div{
-background:#071A3D;
-padding:20px;
-border-radius:18px;
-text-align:center;
-line-height:1.8;
-font-size:17px;
-}
-
-.season-stats strong{
-display:block;
-margin-top:8px;
-color:#FFD700;
-font-size:22px;
-}
-
-@media(max-width:900px){
-
-.season-stats{
-grid-template-columns:repeat(2,1fr);
-}
-
-}
-
-@media(max-width:600px){
-
-.season-menu{
-flex-direction:column;
-align-items:center;
-}
-
-.season-btn{
-width:100%;
-max-width:320px;
-text-align:center;
-}
-
-.season-stats{
 grid-template-columns:1fr;
-}
 
 }
 
-.sponsor-logo img{
 
-max-width:180px;
 
-max-height:100px;
+.season-stats{
 
-width:auto;
-
-height:auto;
-
-object-fit:contain;
-
-}
-.sponsor-logo{
-
-height:150px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-overflow:hidden;
+grid-template-columns:repeat(2,1fr);
 
 }
 
-.sponsor-logo{
-height:150px;
-width:100%;
-display:flex;
-align-items:center;
-justify-content:center;
-overflow:hidden;
-background:#071A3D;
-border-radius:20px;
+
 }
 
 
-.sponsor-logo img{
-width:140px;
-height:100px;
-max-width:100%;
-max-height:100%;
-object-fit:contain;
-display:block;
+
+
+
+@media(max-width:500px){
+
+
+section{
+
+padding:70px 15px;
+
+}
+
+
+
+.hero-logo{
+
+width:130px;
+
+}
+
+
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+
+
+.season-stats{
+
+grid-template-columns:1fr;
+
+}
+
+
 }

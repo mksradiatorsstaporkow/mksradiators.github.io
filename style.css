@@ -1,176 +1,410 @@
 * {
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
 }
+
+
+html {
+scroll-behavior: smooth;
+}
+
 
 body {
-background:#071A3D;
-color:white;
+background: #071A3D;
+color: white;
 }
+
+
+/* HEADER */
 
 header {
-background:#003B8F;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+
+position: fixed;
+top: 0;
+width: 100%;
+
+background: rgba(0, 59, 143, 0.95);
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+padding: 15px 40px;
+
+z-index: 1000;
+
 }
 
-.logo-area {
-display:flex;
-align-items:center;
-gap:15px;
+
+.logo {
+
+display: flex;
+align-items: center;
+gap: 15px;
+
+font-size: 22px;
+font-weight: bold;
+
+color: #FFD700;
+
 }
 
-.logo-area img {
-width:70px;
+
+.logo img {
+
+width: 65px;
+
 }
 
-header h1 {
-font-size:24px;
-}
+
 
 nav a {
-color:#FFD700;
-text-decoration:none;
-margin:10px;
-font-weight:bold;
+
+color: white;
+text-decoration: none;
+
+margin-left: 20px;
+
+font-weight: bold;
+
 }
+
+
+nav a:hover {
+
+color: #FFD700;
+
+}
+
+
+
+
+
+/* HERO */
 
 .hero {
-min-height:80vh;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:30px;
+
+height: 100vh;
+
+background:
+
+linear-gradient(
+rgba(7,26,61,0.75),
+rgba(7,26,61,0.85)
+),
+
+url("druzyna.jpg.HEIC");
+
+
+background-size: cover;
+background-position: center;
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+text-align: center;
+
 }
 
-.big-logo {
-width:220px;
+
+
+.hero-content {
+
+animation: show 1.5s;
+
 }
 
-.hero h2 {
-font-size:45px;
-color:#FFD700;
-margin:20px;
+
+.hero-logo {
+
+width: 220px;
+
 }
+
+
+
+.hero h1 {
+
+font-size: 55px;
+
+color: #FFD700;
+
+margin: 20px 0;
+
+}
+
+
 
 .hero p {
-font-size:22px;
+
+font-size: 25px;
+
 }
 
-.button {
-margin-top:30px;
-padding:15px 35px;
-background:#FFD700;
-color:#003B8F;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
+
+
+
+.btn {
+
+display: inline-block;
+
+margin-top: 30px;
+
+background: #FFD700;
+
+color: #003B8F;
+
+padding: 15px 35px;
+
+border-radius: 30px;
+
+font-weight: bold;
+
+text-decoration: none;
+
 }
+
+
+
+
+
+
+/* SEKCJE */
+
 
 section {
-max-width:1000px;
-margin:auto;
-padding:70px 20px;
+
+max-width: 1100px;
+
+margin: auto;
+
+padding: 100px 20px;
+
 }
+
+
 
 section h2 {
-text-align:center;
-color:#FFD700;
-font-size:35px;
-margin-bottom:30px;
+
+text-align: center;
+
+font-size: 40px;
+
+color: #FFD700;
+
+margin-bottom: 40px;
+
 }
 
-section p {
-text-align:center;
-line-height:1.6;
+
+
+
+
+/* KARTY */
+
+
+.cards {
+
+display: grid;
+
+grid-template-columns: repeat(3,1fr);
+
+gap: 25px;
+
 }
 
-.photo-team {
-height:400px;
+
+.card {
+
 background:#003B8F;
-border:3px solid #FFD700;
-border-radius:25px;
-display:flex;
-align-items:center;
-justify-content:center;
-}
 
-.players {
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-}
+padding:30px;
 
-.player {
-background:#003B8F;
-border:3px solid #FFD700;
 border-radius:20px;
-padding:20px;
+
+border-bottom:5px solid #FFD700;
+
+}
+
+
+
+
+
+/* MECZ */
+
+
+.match-box {
+
+background:#003B8F;
+
+border:3px solid #FFD700;
+
+padding:40px;
+
+border-radius:25px;
+
 text-align:center;
+
 }
 
-.player-photo {
-height:160px;
-background:#071A3D;
-border-radius:15px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:50px;
+
+
+
+
+/* DRUZYNA */
+
+
+.team-photo img {
+
+width:100%;
+
+border-radius:25px;
+
+border:4px solid #FFD700;
+
 }
 
-.player h3 {
-color:#FFD700;
-margin-top:15px;
-}
+
+
+
+
+
+/* GALERIA */
+
 
 .gallery {
+
 display:grid;
+
 grid-template-columns:repeat(4,1fr);
+
 gap:20px;
+
 }
 
-.gallery-item {
+
+
+.gallery div {
+
 height:200px;
+
 background:#003B8F;
-border:3px solid #FFD700;
+
 border-radius:20px;
+
+border:3px solid #FFD700;
+
 display:flex;
+
 align-items:center;
+
 justify-content:center;
-color:#FFD700;
+
 }
+
+
+
+
+
+/* LINKI */
+
 
 a {
+
 color:#FFD700;
+
 }
+
+
+
+
 
 footer {
-background:#000;
-padding:25px;
+
+background:black;
+
+padding:30px;
+
 text-align:center;
+
 }
 
 
-@media(max-width:700px){
+
+
+
+@keyframes show {
+
+from {
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to {
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+
+
+/* TELEFON */
+
+
+@media(max-width:800px){
+
 
 header {
+
 flex-direction:column;
+
 }
 
-.players,
-.gallery {
+
+nav {
+
+margin-top:15px;
+
+}
+
+
+nav a {
+
+margin:8px;
+
+}
+
+
+.hero h1 {
+
+font-size:35px;
+
+}
+
+
+.cards {
+
 grid-template-columns:1fr;
+
 }
 
-.hero h2 {
-font-size:30px;
+
+.gallery {
+
+grid-template-columns:1fr;
+
 }
+
 
 }

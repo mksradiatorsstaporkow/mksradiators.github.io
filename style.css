@@ -1086,3 +1086,12 @@ grid-template-columns:1fr;
 }
 
 }
+.sponsor-logo img{
+
+max-width:180px;
+
+max-height:100px;
+
+object-fit:contain;
+
+}

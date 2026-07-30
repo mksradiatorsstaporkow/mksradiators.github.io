@@ -2,7 +2,6 @@
 <html lang="pl">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,19 +17,20 @@
 
 <header>
 
-<div class="logo-area">
+<div class="logo">
 
-<img src="herb.png.PNG">
+<img src="herb.png.PNG" alt="MKS Radiator$ Stąporków">
 
-<h1>MKS Radiator$ Stąporków</h1>
+<span>MKS Radiator$ Stąporków</span>
 
 </div>
 
 
 <nav>
 
-<a href="#klub">Klub</a>
-<a href="#kadra">Kadra</a>
+<a href="#news">Aktualności</a>
+<a href="#mecz">Mecz</a>
+<a href="#druzyna">Drużyna</a>
 <a href="#galeria">Galeria</a>
 <a href="#kontakt">Kontakt</a>
 
@@ -44,22 +44,29 @@
 
 <section class="hero">
 
-<img src="herb.png.PNG" class="big-logo">
+
+<div class="hero-content">
 
 
-<h2>MKS Radiator$ Stąporków</h2>
+<img class="hero-logo" src="herb.png.PNG">
+
+
+<h1>MKS Radiator$ Stąporków</h1>
 
 
 <p>
-Oficjalna strona klubu ⚽
+Oficjalna strona klubu piłkarskiego
 </p>
 
 
-<a href="#kontakt" class="button">
-Kontakt
+<a class="btn" href="#kontakt">
+Obserwuj klub
 </a>
 
 
+</div>
+
+
 </section>
 
 
@@ -69,18 +76,80 @@ Kontakt
 
 
 
-<section id="klub">
+<section id="news">
 
 
-<h2>🏟️ O klubie</h2>
+<h2>📰 Aktualności</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>Najnowsze informacje</h3>
+
+<p>
+Tutaj pojawią się aktualności klubowe.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Wyniki</h3>
+
+<p>
+Tutaj znajdziesz ostatnie spotkania.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Transfery</h3>
+
+<p>
+Informacje dotyczące drużyny.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="mecz">
+
+
+<h2>⚽ Najbliższy mecz</h2>
+
+
+<div class="match-box">
+
+
+<h3>MKS Radiator$ Stąporków</h3>
 
 
 <p>
-
-MKS Radiator$ Stąporków to klub piłkarski ze Stąporkowa.
-Informacje o drużynie, meczach i życiu klubu znajdziesz tutaj.
-
+Brak ustalonego spotkania
 </p>
+
+
+</div>
 
 
 </section>
@@ -92,99 +161,22 @@ Informacje o drużynie, meczach i życiu klubu znajdziesz tutaj.
 
 
 
-<section>
+<section id="druzyna">
 
 
 <h2>👥 Drużyna</h2>
 
 
-<div class="photo-team">
+<div class="team-photo">
 
-Zdjęcie drużyny zostanie dodane tutaj ⚽
+
+<img src="druzyna.jpg.HEIC" alt="Drużyna MKS Radiator$ Stąporków">
+
 
 </div>
 
 
 </section>
-
-
-
-
-
-
-
-
-<section id="kadra">
-
-
-<h2>👥 Kadra zespołu</h2>
-
-
-<div class="players">
-
-
-<div class="player">
-
-<div class="player-photo">
-📷
-</div>
-
-<h3>#1</h3>
-
-<p>Bramkarz</p>
-
-</div>
-
-
-
-
-<div class="player">
-
-<div class="player-photo">
-📷
-</div>
-
-<h3>#2</h3>
-
-<p>Obrońca</p>
-
-</div>
-
-
-
-
-<div class="player">
-
-<div class="player-photo">
-📷
-</div>
-
-<h3>#10</h3>
-
-<p>Pomocnik</p>
-
-</div>
-
-
-
-
-<div class="player">
-
-<div class="player-photo">
-📷
-</div>
-
-<h3>#9</h3>
-
-<p>Napastnik</p>
-
-</div>
-
-
-</div>
-
-</section>
-
 
 
 
@@ -202,31 +194,16 @@ Zdjęcie drużyny zostanie dodane tutaj ⚽
 <div class="gallery">
 
 
-<div class="gallery-item">
-Zdjęcie 1
-</div>
-
-
-<div class="gallery-item">
-Zdjęcie 2
-</div>
-
-
-<div class="gallery-item">
-Zdjęcie 3
-</div>
-
-
-<div class="gallery-item">
-Zdjęcie 4
-</div>
+<div>Zdjęcie 1</div>
+<div>Zdjęcie 2</div>
+<div>Zdjęcie 3</div>
+<div>Zdjęcie 4</div>
 
 
 </div>
 
 
 </section>
-
 
 
 
@@ -242,27 +219,20 @@ Zdjęcie 4
 
 
 <p>
-
 Facebook:
 <br>
-
 <a href="https://www.facebook.com/share/14hkRyNvZ5r/?mibextid=wwXIfr">
 MKS Radiator$ Stąporków
 </a>
-
 </p>
 
 
-
 <p>
-
 Instagram:
 <br>
-
 <a href="https://www.instagram.com/mks.radiators.staporkow">
 @mks.radiators.staporkow
 </a>
-
 </p>
 
 
@@ -277,10 +247,15 @@ Instagram:
 
 <footer>
 
+<p>
 © 2026 MKS Radiator$ Stąporków
+</p>
 
 </footer>
 
+
+
+<script src="script.js"></script>
 
 
 </body>

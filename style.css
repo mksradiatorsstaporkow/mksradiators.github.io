@@ -758,3 +758,20 @@ grid-template-columns:1fr;
 
 
 }
+
+.player h2{
+
+color:#FFD700;
+
+font-size:20px;
+
+margin:15px 0;
+
+}
+
+
+.player p{
+
+line-height:1.8;
+
+}

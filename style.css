@@ -1666,3 +1666,34 @@ font-size:16px;
 }
 
 }
+/* ===== WYNIKI - POPRAWA SZEROKOŚCI ===== */
+
+.results{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+    width:100%;
+}
+
+
+.results div{
+    width:100%;
+    min-width:0;
+}
+
+
+@media(max-width:700px){
+
+.results{
+    grid-template-columns:1fr;
+    width:100%;
+}
+
+
+.results div{
+
+    width:100%;
+
+}
+
+}

@@ -993,3 +993,53 @@ section{
 
 
 }
+/* ===== NAPRAWA HERO ===== */
+
+.hero{
+    width:100%;
+    min-height:90vh;
+    margin:0;
+    padding:0;
+    background:none;
+    border-radius:0;
+    border:none;
+    box-shadow:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.hero-content{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+    text-align:center;
+}
+
+
+.hero-logo{
+    width:220px;
+    height:auto;
+    object-fit:contain;
+    display:block;
+    margin:0 auto;
+}
+
+
+.hero h1{
+    font-size:55px;
+}
+
+
+section.hero{
+    background:transparent;
+    backdrop-filter:none;
+}
+
+
+
+body{
+    overflow-x:hidden;
+}

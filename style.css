@@ -2038,3 +2038,101 @@ nav a:hover{
 }
 
 }
+/* ===== LEKKIE ZMNIEJSZENIE HERO ===== */
+
+
+.hero-match{
+
+    max-width:650px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    padding:25px;
+
+}
+
+
+
+.hero-match h3{
+
+    font-size:20px;
+
+}
+
+
+
+.hero-teams{
+
+    gap:25px;
+
+}
+
+
+
+.hero-teams img{
+
+    width:60px;
+
+    height:60px;
+
+}
+
+
+
+.hero-teams strong{
+
+    font-size:25px;
+
+}
+
+
+
+.hero-info span{
+
+    padding:10px 16px;
+
+    font-size:14px;
+
+}
+
+
+
+/* pasek klubowy */
+
+.club-stats{
+
+    max-width:800px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    gap:15px;
+
+}
+
+
+
+.club-stats div{
+
+    padding:20px 12px;
+
+}
+
+
+
+.club-stats strong{
+
+    font-size:26px;
+
+}
+
+
+
+.club-stats span{
+
+    font-size:11px;
+
+}

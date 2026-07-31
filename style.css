@@ -1659,3 +1659,153 @@ section{
     1px solid rgba(255,215,0,.2);
 
 }
+/* ===== PREMIUM ANIMACJE ===== */
+
+
+.hero-logo{
+
+    animation:logoIn 1.2s ease forwards;
+
+}
+
+
+
+.hero h1{
+
+    animation:textIn 1s .2s ease forwards;
+
+    opacity:0;
+
+}
+
+
+
+.hero p{
+
+    animation:textIn 1s .4s ease forwards;
+
+    opacity:0;
+
+}
+
+
+
+.hero .btn{
+
+    animation:textIn 1s .6s ease forwards;
+
+    opacity:0;
+
+}
+
+
+
+.hero-match{
+
+    animation:matchIn 1s .8s ease forwards;
+
+    opacity:0;
+
+}
+
+
+
+@keyframes logoIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.7) rotate(-10deg);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1) rotate(0);
+
+    }
+
+}
+
+
+
+@keyframes textIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes matchIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* ===== SEKCJE POJAWIAJĄ SIĘ PŁYNNIE ===== */
+
+
+.club-bar div,
+.news-card,
+.player,
+.match-card,
+.sponsor-card,
+.club-box,
+.season-box{
+
+    transition:.35s;
+
+}
+
+
+
+.club-bar div:hover,
+.news-card:hover,
+.player:hover,
+.match-card:hover,
+.sponsor-card:hover,
+.club-box:hover,
+.season-box:hover{
+
+    transform:translateY(-8px);
+
+}

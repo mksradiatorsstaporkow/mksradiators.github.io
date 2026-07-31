@@ -2310,3 +2310,95 @@ nav a:hover{
     max-width:100vw;
 
 }
+/* ===== KADRA PREMIUM ===== */
+
+
+.players{
+
+    gap:30px;
+
+}
+
+
+
+.player{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:240px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.player::before{
+
+    content:attr(data-number);
+
+    position:absolute;
+
+    font-size:130px;
+
+    font-weight:900;
+
+    color:rgba(255,255,255,.04);
+
+    right:10px;
+
+    bottom:-20px;
+
+}
+
+
+
+.player-photo{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:20px;
+
+    border:2px solid #FFD700;
+
+}
+
+
+
+.player h3{
+
+    font-size:28px;
+
+    margin-top:15px;
+
+}
+
+
+
+.player h4{
+
+    color:#FFD700;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+
+
+.player p{
+
+    font-weight:700;
+
+}

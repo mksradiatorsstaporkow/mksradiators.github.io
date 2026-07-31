@@ -1809,3 +1809,145 @@ section{
     transform:translateY(-8px);
 
 }
+ 
+/* ===== PREMIUM LIGHT EFFECT ===== */
+
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:#FFD700;
+
+    filter:blur(180px);
+
+    opacity:.12;
+
+    top:100px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    pointer-events:none;
+
+}
+
+
+
+.hero{
+
+    position:relative;
+
+}
+
+
+
+.logo span{
+
+    text-shadow:
+
+    0 0 20px rgba(255,215,0,.5);
+
+}
+#countdown{
+
+    font-size:22px;
+
+    letter-spacing:2px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+#countdown::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.5),
+    transparent
+    );
+
+    animation:shine 3s infinite;
+
+}
+
+
+@keyframes shine{
+
+    100%{
+
+        left:100%;
+
+    }
+
+}
+.hero-logo{
+
+    animation:
+
+    logoFloat 4s ease-in-out infinite;
+
+}
+
+
+@keyframes logoFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+header{
+
+    box-shadow:
+
+    0 10px 40px rgba(0,0,0,.4);
+
+}
+
+
+nav a{
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    transform:translateY(-3px);
+
+}

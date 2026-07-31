@@ -2310,12 +2310,12 @@ nav a:hover{
     max-width:100vw;
 
 }
-/* ===== KADRA PREMIUM ===== */
+/* ===== KADRA BEZ ZDJĘĆ PREMIUM ===== */
 
 
 .players{
 
-    gap:30px;
+    gap:25px;
 
 }
 
@@ -2327,7 +2327,7 @@ nav a:hover{
 
     overflow:hidden;
 
-    min-height:240px;
+    min-height:220px;
 
     display:flex;
 
@@ -2337,25 +2337,35 @@ nav a:hover{
 
     align-items:center;
 
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(0,59,143,.8),
+    rgba(5,11,28,.95)
+    );
+
 }
 
 
 
 .player::before{
 
-    content:attr(data-number);
+    content:"";
 
     position:absolute;
 
-    font-size:130px;
+    font-size:150px;
 
     font-weight:900;
 
-    color:rgba(255,255,255,.04);
+    color:rgba(255,215,0,.08);
 
-    right:10px;
+    right:15px;
 
-    bottom:-20px;
+    bottom:-35px;
 
 }
 
@@ -2363,13 +2373,33 @@ nav a:hover{
 
 .player-photo{
 
-    width:90px;
+    width:85px;
 
-    height:90px;
+    height:85px;
 
-    border-radius:20px;
+    border-radius:50%;
 
-    border:2px solid #FFD700;
+    background:
+
+    linear-gradient(
+    135deg,
+    #FFD700,
+    #ffb700
+    );
+
+    color:#050b1c;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    font-weight:900;
+
+    border:none;
 
 }
 
@@ -2377,9 +2407,11 @@ nav a:hover{
 
 .player h3{
 
-    font-size:28px;
+    font-size:26px;
 
     margin-top:15px;
+
+    color:#FFD700;
 
 }
 
@@ -2387,11 +2419,13 @@ nav a:hover{
 
 .player h4{
 
-    color:#FFD700;
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    color:white;
 
     text-transform:uppercase;
-
-    letter-spacing:1px;
 
 }
 
@@ -2399,6 +2433,8 @@ nav a:hover{
 
 .player p{
 
-    font-weight:700;
+    font-weight:800;
+
+    margin-top:10px;
 
 }

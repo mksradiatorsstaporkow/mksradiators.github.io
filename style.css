@@ -1476,3 +1476,186 @@ section{
 
 
 }
+/* ===== HERO TEXT PREMIUM ===== */
+
+
+.hero h1{
+
+    font-size:52px;
+
+    font-weight:900;
+
+    letter-spacing:1px;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #ffffff,
+    #FFD700
+    );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    margin-top:25px;
+
+}
+
+
+
+.hero p{
+
+    color:#bfc7d9;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    margin:15px 0 30px;
+
+}
+
+
+
+/* przycisk */
+
+.btn{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #FFD700,
+    #ffb700
+    );
+
+    padding:14px 35px;
+
+    border-radius:15px;
+
+    box-shadow:
+
+    0 10px 30px rgba(255,215,0,.25);
+
+}
+
+
+
+
+
+/* ===== PANEL NASTĘPNY MECZ ===== */
+
+
+.hero-match{
+
+    margin-top:45px;
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(0,59,143,.55),
+    rgba(5,11,28,.85)
+    );
+
+    border:
+
+    1px solid rgba(255,215,0,.35);
+
+    border-radius:35px;
+
+    padding:30px;
+
+    box-shadow:
+
+    0 25px 70px rgba(0,0,0,.45);
+
+}
+
+
+
+.hero-match h3{
+
+    font-size:22px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#FFD700;
+
+}
+
+
+
+.hero-teams div{
+
+    background:
+
+    rgba(255,255,255,.05);
+
+    padding:15px;
+
+    border-radius:20px;
+
+}
+
+
+
+.hero-teams p{
+
+    margin:8px 0 0;
+
+    font-size:15px;
+
+}
+
+
+
+.hero-teams strong{
+
+    color:#FFD700;
+
+    text-shadow:
+
+    0 0 20px rgba(255,215,0,.5);
+
+}
+
+
+
+.hero-info{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.hero-info span{
+
+    padding:12px 20px;
+
+    background:
+
+    rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    border:
+
+    1px solid rgba(255,215,0,.2);
+
+}

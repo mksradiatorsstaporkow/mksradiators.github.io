@@ -1951,3 +1951,90 @@ nav a:hover{
     transform:translateY(-3px);
 
 }
+/* ===== CLUB STATS BAR ===== */
+
+
+.club-stats{
+
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+.club-stats div{
+
+    padding:25px 15px;
+
+    border-radius:25px;
+
+    background:
+
+    rgba(255,255,255,.06);
+
+    border:
+
+    1px solid rgba(255,215,0,.25);
+
+    backdrop-filter:blur(15px);
+
+    transition:.3s;
+
+}
+
+
+
+.club-stats div:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#FFD700;
+
+}
+
+
+
+.club-stats strong{
+
+    display:block;
+
+    color:#FFD700;
+
+    font-size:30px;
+
+    font-weight:900;
+
+}
+
+
+
+.club-stats span{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:13px;
+
+    color:#ccc;
+
+    font-weight:700;
+
+}
+
+
+
+@media(max-width:700px){
+
+.club-stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}

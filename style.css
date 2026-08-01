@@ -1757,3 +1757,93 @@ nav{
 
 
 }
+/* ===== FORMA DRUŻYNY ===== */
+
+.form-box{
+    padding:35px;
+    border-radius:35px;
+    background:
+    linear-gradient(145deg,#003B8F,#050b1c);
+    border:1px solid rgba(255,215,0,.3);
+}
+
+
+.form-results{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+
+.form-results div{
+    padding:20px;
+    text-align:center;
+    border-radius:25px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,0,0,.3);
+}
+
+
+.form-results span{
+    color:#FFD700;
+    font-weight:800;
+}
+
+
+.form-results strong{
+    display:block;
+    font-size:35px;
+    margin:15px 0;
+    color:#ff4444;
+}
+
+
+.form-summary{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+
+.form-summary div{
+    text-align:center;
+    padding:20px;
+    background:rgba(255,255,255,.05);
+    border-radius:20px;
+}
+
+
+.form-summary strong{
+    display:block;
+    font-size:35px;
+    color:#FFD700;
+}
+
+
+.form-summary span{
+    color:#ccc;
+}
+
+
+@media(max-width:900px){
+
+.form-results{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.form-summary{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:600px){
+
+.form-results,
+.form-summary{
+    grid-template-columns:1fr;
+}
+
+}

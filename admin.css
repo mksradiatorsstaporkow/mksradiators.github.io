@@ -334,3 +334,118 @@ font-size:32px;
 }
 
 }
+body{
+    margin:0;
+    font-family:'Montserrat',Arial,sans-serif;
+    background:#050b1c;
+    color:white;
+}
+
+
+.admin-header{
+    background:
+    linear-gradient(135deg,#003B8F,#050b1c);
+    padding:30px;
+    text-align:center;
+    border-bottom:2px solid #FFD700;
+}
+
+
+.admin-header h1{
+    color:#FFD700;
+    margin:0;
+}
+
+
+.admin-container{
+
+    width:min(1200px,92%);
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+
+}
+
+
+.admin-box{
+
+    background:
+    rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,215,0,.3);
+
+    border-radius:30px;
+
+    padding:30px;
+
+}
+
+
+
+.admin-box h2{
+
+    color:#FFD700;
+
+}
+
+
+
+input, textarea, select{
+
+    width:100%;
+
+    padding:15px;
+
+    margin:10px 0;
+
+    border-radius:15px;
+
+    border:none;
+
+    background:#07152d;
+
+    color:white;
+
+}
+
+
+
+button{
+
+    background:#FFD700;
+
+    color:#050b1c;
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-weight:900;
+
+    cursor:pointer;
+
+}
+
+
+
+button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+@media(max-width:700px){
+
+.admin-container{
+
+grid-template-columns:1fr;
+
+}
+
+}

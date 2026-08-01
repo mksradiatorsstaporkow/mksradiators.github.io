@@ -449,3 +449,46 @@ grid-template-columns:1fr;
 }
 
 }
+.saved-news{
+
+margin-top:20px;
+
+padding:20px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,215,0,.25);
+
+}
+
+
+
+.saved-news h3{
+
+color:#FFD700;
+
+margin-bottom:10px;
+
+}
+
+
+
+.saved-news span{
+
+color:#aaa;
+
+font-size:13px;
+
+}
+
+
+
+.saved-news p{
+
+margin-top:10px;
+
+color:#ddd;
+
+}

@@ -92,3 +92,77 @@ nav.classList.remove("active");
 });
 
 });
+function loadNews(){
+
+let news = JSON.parse(localStorage.getItem("news")) || [];
+
+let container = document.getElementById("newsContainer");
+
+
+if(!container) return;
+
+
+if(news.length === 0){
+
+container.innerHTML = `
+<div class="news-card">
+
+<div class="news-placeholder">
+📰
+</div>
+
+<div class="news-content">
+
+<h3>Brak aktualności</h3>
+
+<p>
+Nowe informacje z klubu pojawią się tutaj.
+</p>
+
+</div>
+
+</div>
+`;
+
+return;
+
+}
+
+
+container.innerHTML="";
+
+
+news.reverse().forEach(n=>{
+
+
+container.innerHTML += `
+
+<div class="news-card">
+
+<div class="news-placeholder">
+⚽
+</div>
+
+<div class="news-content">
+
+<span>${n.date}</span>
+
+<h3>${n.title}</h3>
+
+<p>
+${n.text}
+</p>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+
+}
+
+
+loadNews();

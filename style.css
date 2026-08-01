@@ -2824,3 +2824,79 @@ transform:translateY(-6px);
 box-shadow:0 15px 35px rgba(255,215,0,.35);
 
 }
+ /* ===== CLUB TICKER ===== */
+
+.club-ticker{
+
+width:100%;
+
+overflow:hidden;
+
+background:
+
+linear-gradient(
+90deg,
+#07152d,
+#003B8F,
+#07152d
+);
+
+border-top:1px solid rgba(255,215,0,.25);
+
+border-bottom:1px solid rgba(255,215,0,.25);
+
+padding:12px 0;
+
+}
+
+
+.ticker-track{
+
+display:flex;
+
+gap:45px;
+
+width:max-content;
+
+animation:ticker 25s linear infinite;
+
+}
+
+
+.ticker-track span{
+
+color:#fff;
+
+font-weight:800;
+
+font-size:14px;
+
+letter-spacing:1px;
+
+white-space:nowrap;
+
+}
+
+
+.ticker-track span::first-letter{
+
+color:#FFD700;
+
+}
+
+
+@keyframes ticker{
+
+from{
+
+transform:translateX(0);
+
+}
+
+to{
+
+transform:translateX(-50%);
+
+}
+
+}

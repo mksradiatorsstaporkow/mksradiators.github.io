@@ -2731,3 +2731,96 @@ font-size:80px;
     pointer-events:none;
 
 }
+/* ===== STREFA KIBICA ===== */
+
+#kibice{
+
+text-align:center;
+
+margin:90px auto;
+
+}
+
+.fans-box{
+
+max-width:800px;
+
+margin:auto;
+
+padding:45px;
+
+border-radius:35px;
+
+background:
+linear-gradient(
+145deg,
+#003B8F,
+#07152d
+);
+
+border:2px solid rgba(255,215,0,.35);
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.35);
+
+}
+
+.fans-box h3{
+
+font-size:32px;
+
+color:#FFD700;
+
+margin-bottom:20px;
+
+}
+
+.fans-box p{
+
+color:#ddd;
+
+font-size:18px;
+
+line-height:1.7;
+
+margin-bottom:35px;
+
+}
+
+.fans-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.fans-buttons a{
+
+padding:16px 35px;
+
+border-radius:50px;
+
+background:#FFD700;
+
+color:#07152d;
+
+font-weight:900;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.fans-buttons a:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 35px rgba(255,215,0,.35);
+
+}
